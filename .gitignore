@@ -1,5 +1,4 @@
 .direnv/
 .envrc
 
-.zig-cache/
-zig-out/
+target/

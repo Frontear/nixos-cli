@@ -1,10 +1,10 @@
 {
   mkShell,
 
-  zig,
+  nixos-cli,
 }:
 mkShell {
-  packages = [
-    zig
+  inputsFrom = [
+    nixos-cli
   ];
 }

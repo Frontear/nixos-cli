@@ -5,10 +5,6 @@
 }:
 mkShell {
   packages = [
-    zig.hook
+    zig
   ];
-
-  shellHook = ''
-    export ZIG_LOCAL_CACHE_DIR="$ZIG_GLOBAL_CACHE_DIR"
-  '';
 }

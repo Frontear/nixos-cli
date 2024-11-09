@@ -1,14 +1,10 @@
 {
   mkShell,
 
-  zig,
+  nixos-cli,
 }:
 mkShell {
-  packages = [
-    zig.hook
+  inputsFrom = [
+    nixos-cli
   ];
-
-  shellHook = ''
-    export ZIG_LOCAL_CACHE_DIR="$ZIG_GLOBAL_CACHE_DIR"
-  '';
 }

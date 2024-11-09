@@ -15,7 +15,7 @@ rustPlatform.buildRustPackage {
     ];
   };
 
-  cargoHash = "sha256-+9mBOYc9mI2Z0iv4Rmr1+GiqZ1lsYwDlLR5fU4jyXWo=";
+  cargoLock.lockFile = ../../Cargo.lock;
 
   meta = with lib; {
     homepage = "https://github.com/Frontear/nixos-cli";
